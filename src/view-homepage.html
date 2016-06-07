@@ -1,0 +1,58 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="../bower_components/paper-styles/paper-styles.html">
+
+<dom-module id="view-homepage">
+	<template>
+		<style>
+		:host
+		{
+			display: block;
+			padding: 16px;
+			@apply(--layout-vertical);
+			@apply(--layout-center);
+		}
+		div.horiz
+		{
+			@apply(--layout-horizontal);
+		}
+		div.vert
+		{
+			@apply(--layout-vertical);
+			@apply(--layout-start);
+			padding: 8px;
+			display: inline-block;
+		}
+		iron-image
+		{
+			background-color: var(--paper-gray-200);
+			width: 144px;
+			height: 144px;
+		}
+		h1
+		{
+			@apply(--paper-font-display1);
+		}
+		h2
+		{
+			@apply(--paper-font-title);
+		}
+		</style>
+
+		<div class="horiz">
+			<iron-image src="../images/logo-144.png" preload fade sizing="contain"></iron-image>
+			<div class="vert">
+				<h1>Midnight Narwhal</h1>
+				<h2>A modern way to reddit</h2>
+			</div>
+		</div>
+
+	</template>
+
+	<script>
+		Polymer({
+			is: "view-homepage"
+		});
+	</script>
+</dom-module>

@@ -1,0 +1,7 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/midnight-narwhal-app.html",
+  "fragments": [
+	"src/view-homepage.html"
+  ]
+}
